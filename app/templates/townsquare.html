@@ -1,0 +1,15 @@
+<h1>Town Square home page</h1>
+
+<h3>Feed</h3>
+<div>
+    {% for data in results %}
+   
+        <h3>{{ data.user }}</h1>
+        <p>{{ data.post }}</p>
+        <p>{{ data.time }}</p>
+        <p>------------------------------------</p>
+    {% endfor %}
+</div>
+
+
+<h2><a href="http://127.0.0.1:8000/post/">Make Post</a></h2>
